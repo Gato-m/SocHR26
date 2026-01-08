@@ -1,23 +1,16 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { View, Text, ActivityIndicator, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
 
 export default function SplashScreen() {
   const router = useRouter();
-  const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    const loadApp = async () => {
-      // Simulē datu ielādi (piemēram, PocketBase sesijas pārbaudi)
-      await new Promise((resolve) => setTimeout(resolve, 3000)); // 3 sekundes
+    const timer = setTimeout(() => {
+      router.replace('/(auth)/onboarding');
+    }, 3000); // 3 sekundes
 
-      const isLoggedIn = await checkSession(); // Tava funkcija
-      setReady(true);
-
-      router.replace(isLoggedIn ? '/(tabs)/absence' : '/(auth)/login');
-    };
-
-    loadApp();
+    return () => clearTimeout(timer);
   }, []);
 
   return (
