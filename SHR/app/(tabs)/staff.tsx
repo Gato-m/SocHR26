@@ -1,18 +1,22 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
 import React from 'react';
-import { useRouter } from 'expo-router';
+import { useTheme } from '../../_theme/useTheme';
+import { Text } from '../../_components/ui/text';
 
-const router = useRouter();
+export default function absence() {
+  const theme = useTheme();
 
-const openAbsenceModal = (userId: string) => {
-  router.push(`/modal/absenceStats?userId=${userId}`);
-};
-export default function staff() {
   return (
-    <View>
-      <Text>staff</Text>
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: theme.colors.background,
+        padding: theme.spacing.lg,
+      }}
+    >
+      <Text style={{ color: theme.colors.primary, fontSize: theme.typography.h1 }}>
+        Staff- Personals!
+      </Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({});

@@ -1,9 +1,11 @@
 import { useEffect } from 'react';
 import { View, Text, ActivityIndicator, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
+import { useTheme } from '../_theme/useTheme';
 
 export default function SplashScreen() {
   const router = useRouter();
+  const theme = useTheme();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -14,9 +16,9 @@ export default function SplashScreen() {
   }, []);
 
   return (
-    <View style={styles.container}>
-      <ActivityIndicator size="large" color="#007AFF" />
-      <Text style={styles.text}>Ielādējam SHR...</Text>
+    <View style={[styles.container, { backgroundColor: theme.colors.background }]}>
+      <ActivityIndicator size="large" color={theme.colors.primary} />
+      <Text style={[styles.text, { color: theme.colors.text }]}>Ielādējam SHR...</Text>
     </View>
   );
 }

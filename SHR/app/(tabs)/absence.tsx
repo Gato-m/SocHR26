@@ -1,12 +1,22 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
 import React from 'react';
+import { useTheme } from '../../_theme/useTheme';
+import { Text } from '../../_components/ui/text';
 
 export default function absence() {
+  const theme = useTheme();
+
   return (
-    <View>
-      <Text>absence</Text>
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: theme.colors.background,
+        padding: theme.spacing.lg,
+      }}
+    >
+      <Text style={{ color: theme.colors.primary, fontSize: theme.typography.h1 }}>
+        Home - Absences tab!
+      </Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({});
