@@ -1,13 +1,13 @@
 export const colorsDark = {
-  primary: '#3bf64bff',
+  primary: '#159e21ff',
   primaryDark: '#076911ff',
 
   success: '#22C55E',
   warning: '#FBBF24',
   danger: '#EF4444',
 
-  background: '#011d39ff',
-  text: '#F9FAFB',
+  background: '#262e33',
+  text: '#e7e9eaff',
 
   surface: '#1E293B',
   surfaceDark: '#334155',

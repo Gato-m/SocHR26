@@ -7,7 +7,7 @@ export const colorsLight = {
   danger: '#DC2626',
 
   background: '#FFFFFF',
-  text: '#25262aff',
+  text: '#636363ff',
 
   surface: '#F3F4F6',
   surfaceDark: '#E5E7EB',

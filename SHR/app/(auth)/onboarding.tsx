@@ -101,7 +101,7 @@ export default function Onboarding() {
               {/* PREV BUTTON (top-left) */}
               {currentIndex > 0 && (
                 <View style={{ position: 'absolute', top: 90, left: 24 }}>
-                  <Button variant="outline" onPress={handlePrev}>
+                  <Button variant="outline" onPress={handlePrev} style={{ width: 150 }}>
                     <Text variant="body">Iepriekšējais</Text>
                   </Button>
                 </View>
@@ -110,7 +110,7 @@ export default function Onboarding() {
               {/* SKIP BUTTON (top-right) */}
               {!item.isLast && (
                 <View style={{ position: 'absolute', top: 90, right: 24 }}>
-                  <Button variant="outline" onPress={handleSkip}>
+                  <Button variant="outline" onPress={handleSkip} style={{ width: 150 }}>
                     <Text variant="body">Izlaist</Text>
                   </Button>
                 </View>
@@ -151,7 +151,7 @@ export default function Onboarding() {
                   variant="body"
                   style={{
                     textAlign: 'center',
-                    color: theme.colors.textSecondary,
+                    color: theme.colors.text,
                     maxWidth: 300,
                   }}
                 >
@@ -224,7 +224,7 @@ export default function Onboarding() {
             alignItems: 'center',
           }}
         >
-          <Button variant="primary" onPress={handleNext}>
+          <Button variant="primary" onPress={handleNext} style={{ width: 150 }}>
             <Text variant="body" style={{ color: '#FFFFFF' }}>
               Nākamais
             </Text>
@@ -243,7 +243,7 @@ export default function Onboarding() {
             alignItems: 'center',
           }}
         >
-          <Button variant="primary" onPress={handleEnter}>
+          <Button variant="primary" onPress={handleEnter} style={{ width: 150 }}>
             <Text variant="body" style={{ color: '#FFFFFF' }}>
               Ienākt
             </Text>
