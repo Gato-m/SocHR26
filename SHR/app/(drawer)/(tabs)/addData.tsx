@@ -1,7 +1,7 @@
 import { View } from 'react-native';
 import React from 'react';
-import { useTheme } from '../../_theme/useTheme';
-import { Text } from '../../_components/ui/text';
+import { useTheme } from '../../../_theme/useTheme';
+import { Text } from '../../../_components/ui/text';
 
 export default function absence() {
   const theme = useTheme();
@@ -10,7 +10,7 @@ export default function absence() {
     <View
       style={{
         flex: 1,
-        backgroundColor: theme.colors.background,
+        backgroundColor: theme.colors.surface,
         padding: theme.spacing.lg,
       }}
     >

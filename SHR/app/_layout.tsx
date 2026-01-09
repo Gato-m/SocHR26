@@ -9,7 +9,7 @@ export default function RootLayout() {
         <Stack.Screen name="splash" options={{ headerShown: false }} />
         <Stack.Screen name="(auth)/onboarding" options={{ headerShown: false }} />
         <Stack.Screen name="(auth)/login" options={{ headerShown: false }} />
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
         <Stack.Screen name="modal/absenceStats" options={{ presentation: 'modal' }} />
         <Stack.Screen name="modal/userProfileEdit" options={{ presentation: 'modal' }} />
         <Stack.Screen name="modal/exportOptions" options={{ presentation: 'modal' }} />
