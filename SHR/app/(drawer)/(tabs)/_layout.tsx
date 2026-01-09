@@ -160,6 +160,7 @@ const styles = StyleSheet.create({
   menuContainer: {
     width: 280,
     padding: 20,
+    paddingTop: 50,
     shadowColor: '#000',
     shadowOffset: {
       width: -2,

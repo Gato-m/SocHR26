@@ -35,6 +35,11 @@ export const textVariants = createVariants({
     fontFamily: theme.typography.fontBold,
     color: theme.colors.text,
   }),
+  h3: (theme: AppTheme) => ({
+    fontSize: theme.typography.h3,
+    fontFamily: theme.typography.fontBold,
+    color: theme.colors.text,
+  }),
   body: (theme: AppTheme) => ({
     fontSize: theme.typography.body,
     fontFamily: theme.typography.fontRegular,

@@ -19,20 +19,20 @@ const { width, height } = Dimensions.get('window');
 const slides = [
   {
     key: '1',
-    title: 'Laipni lūdzam!',
-    subtitle: 'Izpēti mūsu lietotni soli pa solim.',
+    title: 'Esi sveicināts!',
+    subtitle: 'Dari zināmu citiem par savu prombūtni',
     image: require('../../assets/onb-1.png'),
   },
   {
     key: '2',
-    title: 'Ātra piekļuve',
-    subtitle: 'Piekļūsti funkcijām ar vienu pieskārienu.',
+    title: 'Uzskatāmi par citiem',
+    subtitle: 'Uzzini par kolēģu prombūtni',
     image: require('../../assets/onb-2.png'),
   },
   {
     key: '3',
-    title: 'Sāc tagad',
-    subtitle: 'Reģistrējies un sāc lietot uzreiz.',
+    title: 'Negaidi rītdienu',
+    subtitle: 'Sāc lietot tūlīt!',
     image: require('../../assets/onb-3.png'),
     isLast: true,
   },

@@ -14,9 +14,7 @@ export default function absence() {
         padding: theme.spacing.lg,
       }}
     >
-      <Text style={{ color: theme.colors.primary, fontSize: theme.typography.h1 }}>
-        Home - Absences tab!
-      </Text>
+      <Text style={{ color: theme.colors.primary, fontSize: theme.typography.h1 }}>Prombūtne</Text>
     </View>
   );
 }

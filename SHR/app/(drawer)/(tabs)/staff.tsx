@@ -51,7 +51,7 @@ export default function staff() {
                     <Text
                       style={{
                         fontSize: theme.typography.h3,
-                        fontWeight: '600',
+                        fontWeight: '900',
                         color: theme.colors.text,
                       }}
                     >
@@ -61,7 +61,6 @@ export default function staff() {
                       style={{
                         fontSize: theme.typography.caption,
                         color: theme.colors.text,
-                        opacity: 0.7,
                       }}
                     >
                       {user.role}
@@ -70,7 +69,6 @@ export default function staff() {
                       style={{
                         fontSize: theme.typography.small,
                         color: theme.colors.text,
-                        opacity: 0.5,
                       }}
                     >
                       {user.email}
@@ -94,14 +92,7 @@ export default function staff() {
 
 const styles = StyleSheet.create({
   cardShadow: {
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 4,
+    backgroundColor: 'white',
   },
   userCard: {
     flexDirection: 'row',
@@ -123,6 +114,6 @@ const styles = StyleSheet.create({
   },
   userDetails: {
     flex: 1,
-    gap: 4,
+    gap: 1,
   },
 });

@@ -14,7 +14,9 @@ export default function absence() {
         padding: theme.spacing.lg,
       }}
     >
-      <Text style={{ color: theme.colors.primary, fontSize: theme.typography.h1 }}>Add Data!</Text>
+      <Text style={{ color: theme.colors.primary, fontSize: theme.typography.h1 }}>
+        Pievienot datus
+      </Text>
     </View>
   );
 }

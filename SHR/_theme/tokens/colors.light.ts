@@ -1,5 +1,5 @@
 export const colorsLight = {
-  primary: '#129d25ff',
+  primary: '#178726ff',
   primaryDark: '#33710dff',
 
   success: '#16A34A',
@@ -9,8 +9,8 @@ export const colorsLight = {
   background: '#FFFFFF',
   text: '#636363ff',
 
-  surface: '#F3F4F6',
-  surfaceDark: '#E5E7EB',
+  surface: '#e5e5e7ff',
+  surfaceDark: '#ecedeeff',
 
   overlay: 'rgba(0,0,0,0.1)',
 };
